@@ -212,7 +212,7 @@ SELECT
         extract(w from (TIMESTAMP WITH TIME ZONE 'epoch' + ts/1000 * INTERVAL '1 Second ')),
         extract(mon from (TIMESTAMP WITH TIME ZONE 'epoch' + ts/1000 * INTERVAL '1 Second ')),
         extract(y from (TIMESTAMP WITH TIME ZONE 'epoch' + ts/1000 * INTERVAL '1 Second ')),
-        extract(dow from (TIMESTAMP WITH TIME ZONE 'epoch' + ts/1000 * INTERVAL '1 Second '))-1
+        extract(dow from (TIMESTAMP WITH TIME ZONE 'epoch' + ts/1000 * INTERVAL '1 Second '))
 FROM staging_events;
 """)
 
